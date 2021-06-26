@@ -15,7 +15,7 @@ To build this application I used:
 
 ## Deployed app link
 
-[Calculator magic]()
+[Calculator magic](https://protected-waters-52837.herokuapp.com/)
 
 ## Features
 
