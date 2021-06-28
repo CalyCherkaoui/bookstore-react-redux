@@ -20,7 +20,7 @@ const BooksForm = () => {
             }
           </select>
         </label>
-
+        <button type="submit">+ Add Book to you Book-store</button>
       </form>
     </div>
   );
