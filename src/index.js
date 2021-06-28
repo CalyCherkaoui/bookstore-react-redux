@@ -3,6 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import rootReducer from './reducers/index';
+
+const initialState = {
+  books: [
+    {
+      id: Math.floor(Math.random() * 1000),
+      title: 'Zadig ou la destinée',
+      category: 'History',
+    },
+  ],
+};
 
 ReactDOM.render(
   <React.StrictMode>
