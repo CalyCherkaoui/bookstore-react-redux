@@ -14,6 +14,11 @@ const initialState = {
       title: 'Zadig ou la destinée',
       category: 'History',
     },
+    {
+      id: Math.floor(Math.random() * 1000),
+      title: 'Journey to the Center of the Earth',
+      category: 'Sci-Fi',
+    },
   ],
 };
 

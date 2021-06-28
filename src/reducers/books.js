@@ -1,8 +1,8 @@
 import { CREATE_BOOK, REMOVE_BOOK } from '../actions';
 
-const initalState = [];
+const initialState = [];
 
-const booksReducer = (state = initalState, action) => {
+const booksReducer = (state = initialState, action) => {
   switch (action.type) {
     case CREATE_BOOK:
       return [
