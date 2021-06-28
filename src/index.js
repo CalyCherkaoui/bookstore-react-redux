@@ -7,15 +7,17 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import rootReducer from './reducers/index';
 
+const IdGenerator = () => Math.floor(Math.random() * 1000);
+
 const initialState = {
   books: [
     {
-      id: Math.floor(Math.random() * 1000),
+      id: IdGenerator(),
       title: 'Zadig ou la destinée',
       category: 'History',
     },
     {
-      id: Math.floor(Math.random() * 1000),
+      id: IdGenerator(),
       title: 'Journey to the Center of the Earth',
       category: 'Sci-Fi',
     },

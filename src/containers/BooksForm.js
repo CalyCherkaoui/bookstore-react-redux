@@ -6,9 +6,12 @@ const BooksForm = () => {
   return (
     <div>
       <form>
-        <input type="text" placeholder="Title" name="title" id="title" />
+        <label htmlFor="title">
+          Title:
+          <input type="text" placeholder="Title" name="title" id="title" />
+        </label>
 
-        <label>
+        <label htmlFor="category">
           Select a category :
           <select name="category" id="category">
             {
