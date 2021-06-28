@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import rootReducer from './reducers/index';
+import { createStore } from 'redux';
 
 const initialState = {
   books: [
@@ -14,6 +15,8 @@ const initialState = {
     },
   ],
 };
+
+const store = createStore( rootReducer, initialState);
 
 ReactDOM.render(
   <React.StrictMode>
