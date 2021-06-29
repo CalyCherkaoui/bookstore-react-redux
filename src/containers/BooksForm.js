@@ -1,5 +1,7 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
+import { useState } from 'react';
+import PropTypes from 'prop-types';
 
 const BooksForm = () => {
   const categoriesList = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
@@ -23,7 +25,7 @@ const BooksForm = () => {
             }
           </select>
         </label>
-        <button type="submit">+ Add Book to you Book-store</button>
+        <button type="submit" name="submit" onclick={handleSubmit}>+ Add Book to you Book-store</button>
       </form>
     </div>
   );
