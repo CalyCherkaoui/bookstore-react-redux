@@ -73,7 +73,8 @@ const mapDispatchToProps = {
   createBook,
 };
 
-BooksForm.PropTypes = {
+BooksForm.propTypes = {
+  // eslint-disable-next-line react/no-unused-prop-types
   createBook: PropTypes.func.isRequired,
 };
 
