@@ -1,11 +1,12 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 import { createBook } from '../actions';
 
 const BooksForm = () => {
   const [title, setTitle] = useState('');
-  const [category, setCategory ] = useState('');
+  const [category, setCategory] = useState('');
   const categoriesList = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
 
   const handleSubmit = () => {
@@ -68,4 +69,12 @@ const BooksForm = () => {
   );
 };
 
-export default BooksForm;
+const mapDispatchToProps = {
+  createBook,
+};
+
+BooksForm.PropTypes = {
+  createBook: PropTypes.func.isRequired,
+};
+
+export default connect(undefined, mapDispatchToProps)(BooksForm);
