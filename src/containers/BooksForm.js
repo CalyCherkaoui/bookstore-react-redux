@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { createBook } from '../actions';
 
-const BooksForm = () => {
+const BooksForm = ({ createBook }) => {
   const [title, setTitle] = useState('');
   const [category, setCategory] = useState('');
   const categoriesList = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
@@ -20,7 +20,7 @@ const BooksForm = () => {
   };
 
   const handleChange = (e) => {
-    if (e.target.is === 'title') {
+    if (e.target.id === 'title') {
       setTitle(e.target.value);
     } else {
       setCategory(e.target.value);
