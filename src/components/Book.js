@@ -13,14 +13,14 @@ const Book = ({ book, removeBookHandler }) => {
         <button
           type="button"
           onClick={
-            () => removeBookHandler(id)
+            () => removeBookHandler(book)
           }
         >
           Remove Book
         </button>
       </td>
     </tr>
-  )
+  );
 };
 
 Book.propTypes = {
