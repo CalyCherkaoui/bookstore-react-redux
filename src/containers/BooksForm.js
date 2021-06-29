@@ -9,9 +9,10 @@ const BooksForm = () => {
   const [category, setCategory] = useState('');
   const categoriesList = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
     createBook({
-      id: 0,
+      id: Math.floor(Math.random() * 1000),
       title,
       category,
     });
