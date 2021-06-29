@@ -1,8 +1,7 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
-import React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { createBook } from '../actions'
+import { createBook } from '../actions';
 
 const BooksForm = () => {
   const [title, setTitle] = useState('');
