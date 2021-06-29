@@ -2,9 +2,22 @@
 import React from 'react';
 import { useState } from 'react';
 import PropTypes from 'prop-types';
+import { createBook } from '../actions'
 
 const BooksForm = () => {
+  const [title, setTitle] = useState('');
+  const [category, setCategory ] = useState('');
   const categoriesList = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
+
+  const handleSubmit = () => {
+    createBook({
+      id: 0,
+      title,
+      category,
+    });
+    setTitle('');
+  };
+
   return (
     <div>
       <form>
@@ -39,7 +52,7 @@ const BooksForm = () => {
         <button
           type="submit"
           name="submit"
-          onclick={handleSubmit}
+          onClick={handleSubmit}
         >
           + Add Book to you Book-store
         </button>
