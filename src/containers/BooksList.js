@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Book from '../components/Book';
+import booksReducer from '../reducers/books';
 
 const BooksList = ({ books }) => (
   <div>
@@ -35,4 +36,8 @@ const mapStateToProps = (state) => (
   }
 );
 
-export default connect(mapStateToProps)(BooksList);
+const mapDispatchToProps = (dispatch) => ({
+  booksReducer: () => dispatch(booksReducer()),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(BooksList);
