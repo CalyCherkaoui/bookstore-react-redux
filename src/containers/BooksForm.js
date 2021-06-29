@@ -10,12 +10,23 @@ const BooksForm = () => {
       <form>
         <label htmlFor="title">
           Title:
-          <input type="text" placeholder="Title" name="title" id="title" />
+          <input
+            type="text"
+            placeholder="Add the Book Title Here"
+            name="title"
+            id="title"
+            value={title}
+            onChange={handleChange}
+          />
         </label>
 
         <label htmlFor="category">
           Select a category :
-          <select name="category" id="category">
+          <select
+            name="category"
+            id="category"
+            onChange={handleChange}
+          >
             {
               categoriesList.map(
                 (category) => (
@@ -25,7 +36,13 @@ const BooksForm = () => {
             }
           </select>
         </label>
-        <button type="submit" name="submit" onclick={handleSubmit}>+ Add Book to you Book-store</button>
+        <button
+          type="submit"
+          name="submit"
+          onclick={handleSubmit}
+        >
+          + Add Book to you Book-store
+        </button>
       </form>
     </div>
   );
