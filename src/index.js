@@ -1,12 +1,36 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import rootReducer from './reducers/index';
+
+const IdGenerator = () => Math.floor(Math.random() * 1000);
+
+const initialState = {
+  books: [
+    {
+      id: IdGenerator(),
+      title: 'Zadig ou la destinée',
+      category: 'History',
+    },
+    {
+      id: IdGenerator(),
+      title: 'Journey to the Center of the Earth',
+      category: 'Sci-Fi',
+    },
+  ],
+};
+
+const store = createStore(rootReducer, initialState);
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root'),
 );
