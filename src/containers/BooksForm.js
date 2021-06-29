@@ -1,19 +1,54 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
-import React from 'react';
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { createBook } from '../actions';
 
-const BooksForm = () => {
+const BooksForm = ({ createBook }) => {
+  const [title, setTitle] = useState('');
+  const [category, setCategory] = useState('');
   const categoriesList = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    createBook({
+      id: Math.floor(Math.random() * 1000),
+      title,
+      category,
+    });
+    setTitle('');
+  };
+
+  const handleChange = (e) => {
+    if (e.target.id === 'title') {
+      setTitle(e.target.value);
+    } else {
+      setCategory(e.target.value);
+    }
+  };
+
   return (
     <div>
       <form>
         <label htmlFor="title">
           Title:
-          <input type="text" placeholder="Title" name="title" id="title" />
+          <input
+            type="text"
+            placeholder="Add the Book Title Here"
+            name="title"
+            id="title"
+            value={title}
+            onChange={handleChange}
+          />
         </label>
 
         <label htmlFor="category">
           Select a category :
-          <select name="category" id="category">
+          <select
+            name="category"
+            id="category"
+            onChange={handleChange}
+          >
             {
               categoriesList.map(
                 (category) => (
@@ -23,10 +58,25 @@ const BooksForm = () => {
             }
           </select>
         </label>
-        <button type="submit">+ Add Book to you Book-store</button>
+        <button
+          type="submit"
+          name="submit"
+          onClick={handleSubmit}
+        >
+          + Add Book to you Book-store
+        </button>
       </form>
     </div>
   );
 };
 
-export default BooksForm;
+const mapDispatchToProps = {
+  createBook,
+};
+
+BooksForm.propTypes = {
+  // eslint-disable-next-line react/no-unused-prop-types
+  createBook: PropTypes.func.isRequired,
+};
+
+export default connect(undefined, mapDispatchToProps)(BooksForm);
