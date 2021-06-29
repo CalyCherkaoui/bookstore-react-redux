@@ -18,6 +18,14 @@ const BooksForm = () => {
     setTitle('');
   };
 
+  const handleChange = (e) => {
+    if (e.target.is === 'title') {
+      setTitle(e.target.value);
+    } else {
+      setCategory(e.target.value);
+    }
+  };
+
   return (
     <div>
       <form>
