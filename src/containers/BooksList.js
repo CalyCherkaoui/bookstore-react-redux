@@ -3,14 +3,20 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Book from '../components/Book';
 import { removeBook } from '../actions';
+import CategoryFilter from '../components/CategoryFilter';
 
-const BooksList = ({ books, removeBook }) => {
+const BooksList = ({ books, removeBook, filter, changeFilter }) => {
   const removeBookHandler = (book) => {
     removeBook(book);
   };
 
+  const filtredBookslist = (filter !== 'All')
+    ? books.filter((book) => book.category === filter)
+    : books;
+
   return (
     <div>
+      <CategoryFilter />
       <table>
         <thead>
           <tr>
