@@ -1,3 +1,5 @@
+/* eslint-disable react/forbid-prop-types */
+/* eslint-disable react/require-default-props */
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
@@ -27,7 +29,7 @@ const BooksList = ({ books, removeBook, filter, changeFilter }) => {
         </thead>
         <tbody>
           {
-            books.map(
+            filtredBookslist.map(
               (book) => (
                 <Book key={book.id} book={book} removeBookHandler={removeBookHandler} />),
             )
@@ -39,14 +41,15 @@ const BooksList = ({ books, removeBook, filter, changeFilter }) => {
 };
 
 BooksList.propTypes = {
-  // eslint-disable-next-line react/forbid-prop-types
   books: PropTypes.array.isRequired,
   removeBook: PropTypes.func.isRequired,
+  filter: PropTypes.string,
 };
 
 const mapStateToProps = (state) => (
   {
     books: state.books,
+    filter: state.filter,
   }
 );
 
