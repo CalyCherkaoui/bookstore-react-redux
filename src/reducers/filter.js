@@ -1,6 +1,6 @@
 import { CHANGE_FILTER } from '../actions';
 
-const initialState = 'All Categories';
+const initialState = 'All';
 
 const filterReducer = (state = initialState, action) => {
   switch (action.type) {
