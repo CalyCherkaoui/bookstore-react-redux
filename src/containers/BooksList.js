@@ -4,12 +4,21 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Book from '../components/Book';
-import { removeBook } from '../actions';
+import { removeBook, changeFilter } from '../actions';
 import CategoryFilter from '../components/CategoryFilter';
 
-const BooksList = ({ books, removeBook, filter, changeFilter }) => {
+const BooksList = ({
+  books,
+  removeBook,
+  filter,
+  changeFilter,
+}) => {
   const removeBookHandler = (book) => {
     removeBook(book);
+  };
+
+  const changeFilterHandler = (filter) => {
+    changeFilter(filter);
   };
 
   const filtredBookslist = (filter !== 'All')
@@ -18,7 +27,7 @@ const BooksList = ({ books, removeBook, filter, changeFilter }) => {
 
   return (
     <div>
-      <CategoryFilter />
+      <CategoryFilter changeFilterHandle={changeFilterHandler} />
       <table>
         <thead>
           <tr>
@@ -43,7 +52,8 @@ const BooksList = ({ books, removeBook, filter, changeFilter }) => {
 BooksList.propTypes = {
   books: PropTypes.array.isRequired,
   removeBook: PropTypes.func.isRequired,
-  filter: PropTypes.string,
+  filter: PropTypes.string.isRequired,
+  changeFilter: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = (state) => (
@@ -55,6 +65,7 @@ const mapStateToProps = (state) => (
 
 const mapDispatchToProps = {
   removeBook,
+  changeFilter,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(BooksList);
