@@ -69,3 +69,21 @@
   border: solid 1px #e8e8e8;
   background-color: var(--white);
 }
+
+.form_submit_button {
+  width: 184px;
+  height: 45px;
+  margin: 19px 0 0 34px;
+  padding: 12.8px 19px 14.2px 22px;
+  border-radius: 3px;
+  background-color: var(--azure);
+  font-family: RobotoSlab;
+  font-size: 13px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: var(--white);
+}
