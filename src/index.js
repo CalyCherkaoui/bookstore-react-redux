@@ -21,6 +21,11 @@ const initialState = {
       title: 'Journey to the Center of the Earth',
       category: 'Sci-Fi',
     },
+    {
+      id: IdGenerator(),
+      title: 'Samarcand',
+      category: 'Biography',
+    },
   ],
 };
 
