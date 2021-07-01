@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;700&display=swap");
+
 :root {
   --bubble-gum-pink: #ff5ab7;
   --black: #1e1e1e;
@@ -27,7 +30,7 @@
   width: 174px;
   height: 24px;
   margin: 29px 524px 19px 0;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 20px;
   font-weight: bold;
   font-stretch: normal;
@@ -50,7 +53,7 @@
 .form_input_book_title::placeholder {
   /* width: 76px; */
   height: 19px;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -77,7 +80,7 @@
   padding: 12.8px 19px 14.2px 22px;
   border-radius: 3px;
   background-color: var(--azure);
-  font-family: RobotoSlab;
+  font-family: "Roboto", sans-serif;
   font-size: 13px;
   font-weight: bold;
   font-stretch: normal;
