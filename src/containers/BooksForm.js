@@ -28,36 +28,33 @@ const BooksForm = ({ createBook }) => {
   };
 
   return (
-    <div>
-      <form>
-        <label htmlFor="title">
-          Title:
-          <input
-            type="text"
-            placeholder="Add the Book Title Here"
-            name="title"
-            id="title"
-            value={title}
-            onChange={handleChange}
-          />
-        </label>
+    <div className="add_book_form_container">
+      <div className="form_title">ADD NEW BOOK:</div>
+      <form className="form_wrapper">
+        <input
+          className="form_input_book_title"
+          type="text"
+          placeholder="Add the Book Title Here"
+          name="title"
+          id="title"
+          value={title}
+          onChange={handleChange}
+        />
 
-        <label htmlFor="category">
-          Select a category :
-          <select
-            name="category"
-            id="category"
-            onChange={handleChange}
-          >
-            {
-              categoriesList.map(
-                (category) => (
-                  <option key="category" value={category}>{category}</option>
-                ),
-              )
-            }
-          </select>
-        </label>
+        <select
+          className="form_input_category_select"
+          name="category"
+          id="category"
+          onChange={handleChange}
+        >
+          {
+            categoriesList.map(
+              (category) => (
+                <option key="category" value={category}>{category}</option>
+              ),
+            )
+          }
+        </select>
         <button
           type="submit"
           name="submit"
