@@ -30,21 +30,30 @@
 /* add book form */
 
 .add_book_form_container {
-  background-color: var(--bubble-gum-pink);
+  /* background-color: var(--bubble-gum-pink); */
+  padding: 0 6.25rem;
+}
+
+.add_book_form_wrapper {
+  /* background-color: #0290ff; */
+  border-top: solid 2px #e8e8e8;
+  padding-top: 1.813rem;
 }
 
 .form_title {
-  width: 174px;
-  height: 24px;
-  margin: 29px 524px 19px 0;
   font-family: "Montserrat", sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: -0.18px;
   color: var(--warm-grey);
+}
+
+.form_wrapper {
+  display: flex;
+  flex-direction: row;
 }
 
 .form_input_book_title {
@@ -58,10 +67,8 @@
 }
 
 .form_input_book_title::placeholder {
-  /* width: 76px; */
-  height: 19px;
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -78,17 +85,25 @@
   border-radius: 4px;
   border: solid 1px #e8e8e8;
   background-color: var(--white);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.15px;
+  color: var(--pinkish-grey);
 }
 
 .form_submit_button {
-  width: 184px;
-  height: 45px;
-  margin: 19px 0 0 34px;
-  padding: 12.8px 19px 14.2px 22px;
+  width: 11.5rem;
+  height: 2.813rem;
+  margin: 1.188rem 0 0 2.125rem;
+  padding: 0.801rem 1.188rem 0.886rem 1.375rem;
   border-radius: 3px;
   background-color: var(--azure);
   font-family: 'Roboto Slab', serif;;
-  font-size: 13px;
+  font-size: 0.813rem;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -96,6 +111,7 @@
   letter-spacing: 0.5px;
   text-align: center;
   color: var(--white);
+  text-transform: uppercase;
 }
 
 /* Books list */

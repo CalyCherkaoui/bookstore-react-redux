@@ -29,41 +29,43 @@ const BooksForm = ({ createBook }) => {
 
   return (
     <div className="add_book_form_container">
-      <div className="form_title">ADD NEW BOOK:</div>
-      <form className="form_wrapper">
-        <input
-          className="form_input_book_title"
-          type="text"
-          placeholder="Add the Book Title Here"
-          name="title"
-          id="title"
-          value={title}
-          onChange={handleChange}
-        />
+      <div className="add_book_form_wrapper">
+        <div className="form_title">ADD NEW BOOK</div>
+        <form className="form_wrapper">
+          <input
+            className="form_input_book_title"
+            type="text"
+            placeholder="Add the Book Title Here"
+            name="title"
+            id="title"
+            value={title}
+            onChange={handleChange}
+          />
 
-        <select
-          className="form_input_category_select"
-          name="category"
-          id="category"
-          onChange={handleChange}
-        >
-          {
-            categoriesList.map(
-              (category) => (
-                <option key="category" value={category}>{category}</option>
-              ),
-            )
-          }
-        </select>
-        <button
-          className="form_submit_button"
-          type="submit"
-          name="submit"
-          onClick={handleSubmit}
-        >
-          + Add Book to you Book-store
-        </button>
-      </form>
+          <select
+            className="form_input_category_select"
+            name="category"
+            id="category"
+            onChange={handleChange}
+          >
+            {
+              categoriesList.map(
+                (category) => (
+                  <option key="category" value={category}>{category}</option>
+                ),
+              )
+            }
+          </select>
+          <button
+            className="form_submit_button"
+            type="submit"
+            name="submit"
+            onClick={handleSubmit}
+          >
+            + Add Book
+          </button>
+        </form>
+      </div>
     </div>
   );
 };
