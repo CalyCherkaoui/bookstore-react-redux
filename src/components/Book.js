@@ -10,14 +10,20 @@ const Book = ({ book, removeBookHandler }) => (
         <p className="book_info_author">Author</p>
       </div>
       <div className="book_editor">
-        <button type="button">Comment</button>
+        <button className="book_editor_comment" type="button">Comment</button>
         <button
+          className="book_editor_button"
           type="button"
           onClick={() => removeBookHandler(book)}
         >
           Remove
         </button>
-        <button type="button">Edit</button>
+        <button
+          className="book_editor_button"
+          type="button"
+        >
+          Edit
+        </button>
       </div>
     </div>
     <div className="book_box_right">

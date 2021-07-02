@@ -228,3 +228,32 @@
   letter-spacing: normal;
   color: #4386bf;
 }
+
+.book_editor * {
+  border: none;
+  background: transparent;
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+.book_editor_button {
+  padding: 0 0.938rem;
+  border-left: solid 1px #e8e8e8;
+}
+
+.book_editor_button:hover {
+  color: var(--bubble-gum-pink);
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.book_editor_comment {
+  padding: 0 0.938rem 0 0;
+}
+
