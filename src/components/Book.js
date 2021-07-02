@@ -27,14 +27,23 @@ const Book = ({ book, removeBookHandler }) => (
       </div>
     </div>
     <div className="book_box_right">
-      <button
-        type="button"
-        onClick={
-          () => removeBookHandler(book)
-        }
-      >
-        Remove Book
-      </button>
+      <div className="stats_wrapper">
+        <div className="stats_graph">gaph</div>
+        <div className="stats_text">
+          <div className="stats_text_percentage">64%</div>
+          <div className="stats_text_comment">completed</div>
+        </div>
+      </div>
+      <div className="progress_wrapper">
+        <p className="progress_current_chapter">Current chapter</p>
+        <p className="progress_chapter_red">Chapter 17</p>
+        <button
+          className="progress_update_btn"
+          type="button"
+        >
+          update progress
+        </button>
+      </div>
     </div>
   </div>
 );

@@ -257,3 +257,9 @@
   padding: 0 0.938rem 0 0;
 }
 
+.book_box_right {
+  /* padding-right: 9.18rem; */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
