@@ -8,26 +8,30 @@ const CategoryFilter = ({ changeFilterHandle }) => {
   };
 
   return (
-    <div>
-      Filter by category:
-      <select
-        name="filter"
-        id="filter"
-        onChange={changeFilterHandler}
-      >
-        {
-          categoriesList.map(
-            (category) => (
-              <option
-                key={category}
-                value={category}
-              >
-                {category}
-              </option>
-            ),
-          )
-        }
-      </select>
+    <div className="navigation_container">
+      <div className="navigation_left">
+        <div className="navigation_logo">Bookstore CMS</div>
+        <select
+          className="categories_selector"
+          name="filter"
+          id="filter"
+          onChange={changeFilterHandler}
+        >
+          {
+            categoriesList.map(
+              (category) => (
+                <option
+                  key={category}
+                  value={category}
+                >
+                  {category}
+                </option>
+              ),
+            )
+          }
+        </select>
+      </div>
+      <div className="navigation_right">avatar</div>
     </div>
   );
 };
