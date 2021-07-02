@@ -11,6 +11,7 @@ const CategoryFilter = ({ changeFilterHandle }) => {
     <div className="navigation_container">
       <div className="navigation_left">
         <div className="navigation_logo">Bookstore CMS</div>
+        <div className="navigation_books">books</div>
         <select
           className="categories_selector"
           name="filter"
