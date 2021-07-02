@@ -1,27 +1,27 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Book = ({ book, removeBookHandler }) => {
-  const { id, title, category } = book;
-
-  return (
-    <tr>
-      <td>{id}</td>
-      <td>{title}</td>
-      <td>{category}</td>
-      <td>
-        <button
-          type="button"
-          onClick={
-            () => removeBookHandler(book)
-          }
-        >
-          Remove Book
-        </button>
-      </td>
-    </tr>
-  );
-};
+const Book = ({ book, removeBookHandler }) => (
+  <div className="book_box">
+    <div className="book_box_left">
+      <div className="book_info">
+        <p className="book_info_category">{book.category}</p>
+        <p className="book_info_title">{book.title}</p>
+        <p className="book_info_author">Author</p>
+      </div>
+    </div>
+    <div className="book_box_right">
+      <button
+        type="button"
+        onClick={
+          () => removeBookHandler(book)
+        }
+      >
+        Remove Book
+      </button>
+    </div>
+  </div>
+);
 
 Book.propTypes = {
   book: PropTypes.shape(
