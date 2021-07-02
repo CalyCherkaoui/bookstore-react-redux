@@ -29,6 +29,10 @@
 
 /* add book form */
 
+.add_book_form_container {
+  background-color: var(--bubble-gum-pink);
+}
+
 .form_title {
   width: 174px;
   height: 24px;
@@ -356,4 +360,9 @@
   letter-spacing: 0.5px;
   color: var(--white);
   text-transform: uppercase;
+}
+
+.progress_update_btn:hover {
+  background-color: var(--bubble-gum-pink);
+  cursor: pointer;
 }
