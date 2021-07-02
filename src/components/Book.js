@@ -36,7 +36,7 @@ const Book = ({ book, removeBookHandler }) => (
       </div>
       <div className="progress_wrapper">
         <p className="progress_current_chapter">Current chapter</p>
-        <p className="progress_chapter_red">Chapter 17</p>
+        <p className="progress_chapter_read">Chapter 17</p>
         <button
           className="progress_update_btn"
           type="button"
