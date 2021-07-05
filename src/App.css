@@ -101,8 +101,9 @@
   margin: 1.188rem 0 0 2.125rem;
   padding: 0.801rem 1.188rem 0.886rem 1.375rem;
   border-radius: 3px;
+  border: none;
   background-color: var(--azure);
-  font-family: 'Roboto Slab', serif;;
+  font-family: 'Roboto Slab', serif;
   font-size: 0.813rem;
   font-weight: bold;
   font-stretch: normal;
@@ -112,6 +113,11 @@
   text-align: center;
   color: var(--white);
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+.form_submit_button:hover {
+  background-color: var(--bubble-gum-pink);
 }
 
 /* Books list */
@@ -300,6 +306,7 @@
   border-width: 5px;
   border-image-source: linear-gradient(to bottom, var(--medium-blue), var(--dodger-blue));
   border-image-slice: 1;
+
   /* width: 5.625rem;
   height: 5.62rem;
   padding: 0.62rem 0.625rem 0.75rem 0.75rem; */
