@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { CgProfile } from 'react-icons';
+import { IconContext } from 'react-icons';
+import { FaUserCircle } from 'react-icons/fa';
 
 const CategoryFilter = ({ changeFilterHandle }) => {
   const categoriesList = ['All', 'Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
@@ -34,7 +35,11 @@ const CategoryFilter = ({ changeFilterHandle }) => {
         </select>
       </div>
       <div className="navigation_right">
-        <CgProfile />
+        <IconContext.Provider value={{ color: 'blue', className: 'global-class-name' }}>
+          <div>
+            <FaUserCircle />
+          </div>
+        </IconContext.Provider>
       </div>
     </div>
   );
