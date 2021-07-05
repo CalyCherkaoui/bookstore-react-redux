@@ -35,7 +35,7 @@ const CategoryFilter = ({ changeFilterHandle }) => {
         </select>
       </div>
       <div className="navigation_right">
-        <IconContext.Provider value={{ color: 'blue', className: 'global-class-name' }}>
+        <IconContext.Provider value={{ color: '#0290ff', className: 'global-class-name' }}>
           <div>
             <FaUserCircle />
           </div>
