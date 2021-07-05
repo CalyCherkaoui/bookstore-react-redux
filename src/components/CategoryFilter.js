@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { CgProfile } from 'react-icons';
 
 const CategoryFilter = ({ changeFilterHandle }) => {
   const categoriesList = ['All', 'Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
@@ -32,7 +33,9 @@ const CategoryFilter = ({ changeFilterHandle }) => {
           }
         </select>
       </div>
-      <div className="navigation_right">avatar</div>
+      <div className="navigation_right">
+        <CgProfile />
+      </div>
     </div>
   );
 };
