@@ -1,7 +1,7 @@
 # Bookstore App with React & Redux
 
 <div align="center">
-  <img src="./public/localhost_3000_.png" width="200" height="200">
+  <img src="./public/localhost_3000_.png" width="500">
 </div>
 
 ## About
