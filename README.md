@@ -1,5 +1,9 @@
 # Bookstore App with React & Redux
 
+<div align="center">
+  <img src="./public/localhost_3000_.png" width="200" height="200">
+</div>
+
 ## About
 
 In this application, I created a bookstore web application with React and Redux.
@@ -16,8 +20,6 @@ To build this application I used:
 ## Deployed app link
 
 [my-Book-store](https://my-magical-book-store.herokuapp.com/)
-
-## Features
 
 ## Getting started (Development)
 
