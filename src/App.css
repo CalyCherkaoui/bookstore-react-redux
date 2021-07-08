@@ -394,3 +394,19 @@
   background-color: var(--bubble-gum-pink);
   cursor: pointer;
 }
+
+/* Progress bar component  */
+
+.svg_progress_bar {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+}
+
+.in_circle {
+  fill: none;
+}
+
+.exo_circle {
+  fill: none;
+}
