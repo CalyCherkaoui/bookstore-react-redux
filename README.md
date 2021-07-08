@@ -50,6 +50,7 @@ Give a ⭐️ if you like this project!
 
 - Hat tip to [stackoverflow](https://stackoverflow.com) community.
 - Hat tip to [Microverse](https://www.microverse.org/) TSE for Code Review
+- Hat tip to [blog.logrocket.com](https://blog.logrocket.com)
 - Hat tip to anyone whose code was used
 
 ## 📝 License
