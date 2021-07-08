@@ -23,8 +23,23 @@ const initialState = {
     },
     {
       id: IdGenerator(),
-      title: 'Samarcand',
+      title: 'Samarkande',
       category: 'Biography',
+    },
+    {
+      id: IdGenerator(),
+      title: 'The name of the rose',
+      category: 'Action',
+    },
+    {
+      id: IdGenerator(),
+      title: 'Pastiche et postiche',
+      category: 'Philosophy',
+    },
+    {
+      id: IdGenerator(),
+      title: 'Thus Spoke Zarathustra',
+      category: 'Philosophy',
     },
   ],
 };
