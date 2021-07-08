@@ -12,25 +12,10 @@ body {
   box-sizing: border-box;
 }
 
-:root {
-  --bubble-gum-pink: #ff5ab7;
-  --black: #1e1e1e;
-  --pinkish-grey: #c4c4c4;
-  --pale-grey: #f5f6fa;
-  --warm-grey: #888;
-  --black-two: #121212;
-  --white: #fff;
-  --dodger-blue: #379cf6;
-  --medium-blue: #307bbe;
-  --azure: #0290ff;
-  --black-5: rgba(0, 0, 0, 0.05);
-}
-
 #root {
   width: 100%;
   margin: auto;
   padding: 3% 0;
   min-height: 100vh;
   background-color: var(--pale-grey);
-  border: #0290ff solid 3px;
 }

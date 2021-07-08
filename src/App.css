@@ -20,8 +20,6 @@
   padding: 0 0 794px;
   margin: auto;
   border-radius: 4px;
-
-  /* box-shadow: 0 0 60px 0 var(--black-5); */
   -webkit-box-shadow: 13px 17px 50px 5px rgba(0, 0, 0, 0.33);
   box-shadow: 13px 17px 50px 5px rgba(0, 0, 0, 0.33);
   background-color: #fafafa;
