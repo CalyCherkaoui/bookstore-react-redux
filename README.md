@@ -15,7 +15,7 @@ To build this application I used:
 
 ## Deployed app link
 
-[Calculator magic](https://protected-waters-52837.herokuapp.com/)
+[my-Book-store](https://my-magical-book-store.herokuapp.com/)
 
 ## Features
 
