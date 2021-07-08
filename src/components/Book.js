@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import ProgressBar from './ProgressBar';
 
 const Book = ({ book, removeBookHandler }) => (
   <div className="book_box">
@@ -28,7 +29,15 @@ const Book = ({ book, removeBookHandler }) => (
     </div>
     <div className="book_box_right">
       <div className="stats_wrapper">
-        <div className="stats_graph">gaph</div>
+        <div className="stats_graph">
+          <ProgressBar
+            percentage={64}
+            size={80}
+            strokeWidth={10}
+            innCircleStroke="#f5f6fa" // gray bg
+            exoCircleStroke="#379cf6" // blue progress
+          />
+        </div>
         <div className="stats_text">
           <div className="stats_text_percentage">64%</div>
           <div className="stats_text_comment">completed</div>
