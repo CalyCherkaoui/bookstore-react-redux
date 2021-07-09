@@ -26,6 +26,37 @@
   background-color: #fafafa;
 }
 
+.normal_typography {
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+}
+
+.bold_typography {
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+}
+
+.input_typography {
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.15px;
+}
+
+.blue_btn_typography {
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.813rem;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+}
+
 /* add book form */
 
 .add_book_form_container {
@@ -42,10 +73,6 @@
 .form_title {
   font-family: "Montserrat", sans-serif;
   font-size: 1.25rem;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: -0.18px;
   color: var(--warm-grey);
 }
@@ -86,10 +113,6 @@
   background-color: var(--white);
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: -0.15px;
   color: var(--pinkish-grey);
 }
@@ -102,13 +125,7 @@
   border-radius: 3px;
   border: none;
   background-color: var(--azure);
-  font-family: 'Roboto Slab', serif;
-  font-size: 0.813rem;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: 0.5px;
   text-align: center;
   color: var(--white);
   text-transform: uppercase;
@@ -143,7 +160,7 @@
   display: flex;
   flex-direction: row;
   justify-content: start;
-  align-items: baseline;
+  align-items: center;
 }
 
 .navigation_left * {
@@ -151,12 +168,8 @@
 }
 
 .navigation_logo {
-  font-family: "Montserrat", sans-serif;
   font-size: 1.875rem;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
+  font-family: "Montserrat", sans-serif;
   letter-spacing: normal;
   color: var(--azure);
 }
@@ -165,10 +178,6 @@
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   font-size: 0.813rem;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: 1.9px;
   color: var(--black-two);
 }
@@ -177,10 +186,6 @@
   opacity: 0.5;
   font-family: "Montserrat", sans-serif;
   font-size: 0.813rem;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: 1.9px;
   color: var(--black-two);
   border: none;
@@ -223,10 +228,6 @@
   opacity: 0.5;
   font-family: "Montserrat", sans-serif;
   font-size: 0.875rem;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: normal;
   color: var(--black-two);
   margin-bottom: 0.25rem;
@@ -236,10 +237,6 @@
 .book_info_title {
   font-family: 'Roboto Slab', serif;
   font-size: 1rem;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: -0.2px;
   color: var(--black-two);
   white-space: nowrap;
@@ -251,10 +248,6 @@
 .book_info_author {
   font-family: 'Roboto Slab', serif;
   font-size: 0.875rem;
-  font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: normal;
   color: #4386bf;
 }
@@ -264,10 +257,6 @@
   background: transparent;
   font-family: 'Roboto Slab', serif;
   font-size: 0.875rem;
-  font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: normal;
   color: #4386bf;
 }
@@ -288,7 +277,6 @@
 }
 
 .book_box_right {
-  /* padding-right: 9.18rem; */
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -310,10 +298,6 @@
 .stats_text_percentage {
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: normal;
   color: var(--black-two);
 }
@@ -322,10 +306,6 @@
   opacity: 0.5;
   font-family: "Montserrat", sans-serif;
   font-size: 0.875rem;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: normal;
   color: var(--black-two);
   text-transform: capitalize;
@@ -339,10 +319,6 @@
   opacity: 0.5;
   font-family: 'Roboto Slab', serif;
   font-size: 0.813rem;
-  font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: normal;
   color: var(--black-two);
   text-transform: uppercase;
@@ -351,10 +327,6 @@
 .progress_chapter_read {
   font-family: 'Roboto Slab', serif;
   font-size: 1rem;
-  font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: -0.4px;
   color: var(--black-two);
 }
@@ -365,13 +337,7 @@
   border-radius: 3px;
   background-color: var(--azure);
   margin-top: 0.75rem;
-  font-family: 'Roboto Slab', serif;
-  font-size: 0.813rem;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: 0.5px;
   color: var(--white);
   text-transform: uppercase;
 }
@@ -382,15 +348,6 @@
 }
 
 /* Progress bar component  */
-
-/* .stats_graph {
-  width: 4.25rem;
-  height: 4.25rem;
-  border-style: solid;
-  border-width: 5px;
-  border-image-source: linear-gradient(to bottom, var(--medium-blue), var(--dodger-blue));
-  border-image-slice: 1;
-} */
 
 .svg_progress_bar {
   display: block;

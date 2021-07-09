@@ -6,21 +6,21 @@ const Book = ({ book, removeBookHandler }) => (
   <div className="book_box">
     <div className="book_box_left">
       <div className="book_info">
-        <p className="book_info_category">{book.category}</p>
-        <p className="book_info_title">{book.title}</p>
-        <p className="book_info_author">Author</p>
+        <p className="book_info_category bold_typography">{book.category}</p>
+        <p className="book_info_title bold_typography">{book.title}</p>
+        <p className="book_info_author normal_typography">Author</p>
       </div>
       <div className="book_editor">
-        <button className="book_editor_comment" type="button">Comment</button>
+        <button className="book_editor_comment normal_typography" type="button">Comment</button>
         <button
-          className="book_editor_button"
+          className="book_editor_button normal_typography"
           type="button"
           onClick={() => removeBookHandler(book)}
         >
           Remove
         </button>
         <button
-          className="book_editor_button"
+          className="book_editor_button normal_typography"
           type="button"
         >
           Edit
@@ -39,15 +39,15 @@ const Book = ({ book, removeBookHandler }) => (
           />
         </div>
         <div className="stats_text">
-          <div className="stats_text_percentage">64%</div>
-          <div className="stats_text_comment">completed</div>
+          <div className="stats_text_percentage normal_typography">64%</div>
+          <div className="stats_text_comment normal_typography">completed</div>
         </div>
       </div>
       <div className="progress_wrapper">
-        <p className="progress_current_chapter">Current chapter</p>
-        <p className="progress_chapter_read">Chapter 17</p>
+        <p className="progress_current_chapter normal_typography">Current chapter</p>
+        <p className="progress_chapter_read normal_typography">Chapter 17</p>
         <button
-          className="progress_update_btn"
+          className="progress_update_btn blue_btn_typography"
           type="button"
         >
           update progress

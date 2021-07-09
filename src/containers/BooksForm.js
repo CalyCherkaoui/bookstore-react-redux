@@ -30,7 +30,7 @@ const BooksForm = ({ createBook }) => {
   return (
     <div className="add_book_form_container">
       <div className="add_book_form_wrapper">
-        <div className="form_title">ADD NEW BOOK</div>
+        <div className="form_title bold_typography">ADD NEW BOOK</div>
         <form className="form_wrapper">
           <input
             className="form_input_book_title"
@@ -43,7 +43,7 @@ const BooksForm = ({ createBook }) => {
           />
 
           <select
-            className="form_input_category_select"
+            className="form_input_category_select normal_typography"
             name="category"
             id="category"
             onChange={handleChange}
@@ -57,7 +57,7 @@ const BooksForm = ({ createBook }) => {
             }
           </select>
           <button
-            className="form_submit_button"
+            className="form_submit_button blue_btn_typography"
             type="submit"
             name="submit"
             onClick={handleSubmit}
