@@ -12,10 +12,10 @@ const CategoryFilter = ({ changeFilterHandle }) => {
   return (
     <div className="navigation_container">
       <div className="navigation_left">
-        <div className="navigation_logo">Bookstore CMS</div>
-        <div className="navigation_books">books</div>
+        <div className="navigation_logo bold_typography">Bookstore CMS</div>
+        <div className="navigation_books normal_typography">books</div>
         <select
-          className="categories_selector"
+          className="categories_selector normal_typography"
           name="filter"
           id="filter"
           onChange={changeFilterHandler}
