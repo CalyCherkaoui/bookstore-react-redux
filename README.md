@@ -1,5 +1,9 @@
 # Bookstore App with React & Redux
 
+<div align="center">
+  <img src="./public/Screenshot-readme.png" width="1000">
+</div>
+
 ## About
 
 In this application, I created a bookstore web application with React and Redux.
@@ -15,9 +19,7 @@ To build this application I used:
 
 ## Deployed app link
 
-[Calculator magic](https://protected-waters-52837.herokuapp.com/)
-
-## Features
+[my-Book-store](https://my-magical-book-store.herokuapp.com/)
 
 ## Getting started (Development)
 
@@ -50,6 +52,7 @@ Give a ⭐️ if you like this project!
 
 - Hat tip to [stackoverflow](https://stackoverflow.com) community.
 - Hat tip to [Microverse](https://www.microverse.org/) TSE for Code Review
+- Hat tip to [blog.logrocket.com](https://blog.logrocket.com)
 - Hat tip to anyone whose code was used
 
 ## 📝 License
